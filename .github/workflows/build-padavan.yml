@@ -17,6 +17,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
